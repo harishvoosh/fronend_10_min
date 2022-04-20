@@ -8,7 +8,7 @@ import StarIcon from '@mui/icons-material/Star';
 import Typography from '@mui/material/Typography';
 import IncDecCounter from './IncDecCounter';
 import './card.css';
-export default function MediaControlCard() {
+export default function Homecard() {
   return (
     <Card
       sx={{

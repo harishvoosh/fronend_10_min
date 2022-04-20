@@ -1,4 +1,5 @@
 import { margin } from '@mui/system';
+import { Link } from 'react-router-dom';
 import React from 'react';
 import IconButton from '@mui/material/IconButton';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
@@ -11,57 +12,63 @@ import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function Sidemenu() {
   return (
-    <div style={{ width: '310px' }}>
+    <div
+      style={{
+        width: '310px',
+      }}
+    >
       <div style={{ backgroundColor: '#FFE5DA' }}>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            padding: '16px',
-          }}
-        >
+        <Link to="profile">
           <div
             style={{
-              borderColor: '#FF9313',
-              borderWidth: '1px',
-              backgroundColor: '#FF9313',
-              height: '61px',
-              width: '64px',
-              borderRadius: 64 / 2,
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              padding: '16px',
             }}
-          ></div>
-          <div>
-            <div
-              style={{
-                color: '#333B43',
-                fontWeight: 700,
-                fontSize: '18px',
-              }}
-            >
-              Brenden Rogers
-            </div>
-            <div
-              style={{
-                color: '#9A98AE',
-                fontWeight: 500,
-                fontSize: '12px',
-              }}
-            >
-              Monthly plan active
-            </div>
-          </div>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#FF6A2D' }}
           >
-            <KeyboardArrowRightIcon />
-          </IconButton>
-        </div>
+            <div
+              style={{
+                borderColor: '#FF9313',
+                borderWidth: '1px',
+                backgroundColor: '#FF9313',
+                height: '61px',
+                width: '64px',
+                borderRadius: 64 / 2,
+              }}
+            ></div>
+            <div>
+              <div
+                style={{
+                  color: '#333B43',
+                  fontWeight: 700,
+                  fontSize: '18px',
+                }}
+              >
+                Brenden Rogers
+              </div>
+              <div
+                style={{
+                  color: '#9A98AE',
+                  fontWeight: 500,
+                  fontSize: '12px',
+                }}
+              >
+                Monthly plan active
+              </div>
+            </div>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#FF6A2D' }}
+            >
+              <KeyboardArrowRightIcon />
+            </IconButton>
+          </div>
+        </Link>
       </div>
       <div style={{ margin: '16px' }}>
         <div
@@ -102,159 +109,167 @@ export default function Sidemenu() {
             <KeyboardArrowRightIcon />
           </IconButton>
         </div>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            margin: '16px',
-          }}
-        >
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#FF6A2D' }}
-          >
-            <BookmarkBorderIcon />
-          </IconButton>
+        <Link to="order">
           <div
             style={{
-              color: '#333B43',
-              fontWeight: 700,
-              fontSize: '14px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              margin: '16px',
             }}
           >
-            Orders
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#FF6A2D' }}
+            >
+              <BookmarkBorderIcon />
+            </IconButton>
+            <div
+              style={{
+                color: '#333B43',
+                fontWeight: 700,
+                fontSize: '14px',
+              }}
+            >
+              Orders
+            </div>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#898D91' }}
+            >
+              <KeyboardArrowRightIcon />
+            </IconButton>
           </div>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#898D91' }}
-          >
-            <KeyboardArrowRightIcon />
-          </IconButton>
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            margin: '16px',
-          }}
-        >
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#FF6A2D' }}
-          >
-            <BusinessIcon />
-          </IconButton>
+        </Link>
+        <Link to="address">
           <div
             style={{
-              color: '#333B43',
-              fontWeight: 700,
-              fontSize: '14px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              margin: '16px',
             }}
           >
-            Addresses
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#FF6A2D' }}
+            >
+              <BusinessIcon />
+            </IconButton>
+            <div
+              style={{
+                color: '#333B43',
+                fontWeight: 700,
+                fontSize: '14px',
+              }}
+            >
+              Addresses
+            </div>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#898D91' }}
+            >
+              <KeyboardArrowRightIcon />
+            </IconButton>
           </div>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#898D91' }}
-          >
-            <KeyboardArrowRightIcon />
-          </IconButton>
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            margin: '16px',
-          }}
-        >
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#FF6A2D' }}
-          >
-            <LiveHelpIcon />
-          </IconButton>
+        </Link>
+        <Link to="faq">
           <div
             style={{
-              color: '#333B43',
-              fontWeight: 700,
-              fontSize: '14px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              margin: '16px',
             }}
           >
-            FAQs
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#FF6A2D' }}
+            >
+              <LiveHelpIcon />
+            </IconButton>
+            <div
+              style={{
+                color: '#333B43',
+                fontWeight: 700,
+                fontSize: '14px',
+              }}
+            >
+              FAQs
+            </div>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#898D91' }}
+            >
+              <KeyboardArrowRightIcon />
+            </IconButton>
           </div>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#898D91' }}
-          >
-            <KeyboardArrowRightIcon />
-          </IconButton>
-        </div>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            margin: '16px',
-          }}
-        >
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#FF6A2D' }}
-          >
-            <FeedbackIcon />
-          </IconButton>
+        </Link>
+        <Link to="feedback">
           <div
             style={{
-              color: '#333B43',
-              fontWeight: 700,
-              fontSize: '14px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              margin: '16px',
             }}
           >
-            Feedback
-          </div>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#FF6A2D' }}
+            >
+              <FeedbackIcon />
+            </IconButton>
+            <div
+              style={{
+                color: '#333B43',
+                fontWeight: 700,
+                fontSize: '14px',
+              }}
+            >
+              Feedback
+            </div>
 
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 0.5 }}
-            style={{ color: '#898D91' }}
-          >
-            <KeyboardArrowRightIcon />
-          </IconButton>
-        </div>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 0.5 }}
+              style={{ color: '#898D91' }}
+            >
+              <KeyboardArrowRightIcon />
+            </IconButton>
+          </div>
+        </Link>
         <div
           style={{
             display: 'flex',
@@ -297,7 +312,11 @@ export default function Sidemenu() {
         </div>
       </div>
       <div
-        style={{ height: '85px', width: '309px', backgroundColor: '#F5F4F9' }}
+        style={{
+          height: '85px',
+          width: '309px',
+          backgroundColor: '#F5F4F9',
+        }}
       >
         <img src={require('../media/VooshLogo.png')} />
         <div style={{ fontSize: '12px', color: '#A1ADB9' }}>

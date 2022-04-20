@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { Link } from 'react-router-dom';
 // importing material UI components
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,22 +11,26 @@ export default function Header() {
   return (
     <>
       <AppBar
-        position="relative"
+        position="sticky"
         // position="fixed"
 
-        style={{ background: '#83ADFF', boxShadow: 'inherit' }}
+        style={{
+          background: '#83ADFF',
+          boxShadow: 'inherit',
+        }}
       >
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-
+          <Link to="sidemenu">
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Link>
           <select
             id="dropdown"
             style={{

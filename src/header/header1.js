@@ -57,10 +57,10 @@ export default function Header1() {
             style={{
               backgroundColor: '#4A88C8',
               borderRadius: 90 / 2,
-              marginTop: -30,
-              position: 'relative',
-              height: 90,
-              width: 90,
+              // marginTop: -10,
+
+              height: 70,
+              width: 70,
             }}
             src={require('../media/pancake 1.png')}
           />
@@ -83,9 +83,11 @@ export default function Header1() {
         style={{
           backgroundColor: '#4A88C8',
           color: '#fff',
-
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '10px',
           height: 80,
-          marginBottom: -60,
+          // marginBottom: -60,
           fontSize: '12px',
         }}
       >
