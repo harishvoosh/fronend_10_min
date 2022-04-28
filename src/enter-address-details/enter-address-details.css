@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.main {
+    height: 100vh;
+}
+
+header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgb(0 0 0 / 15%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header.wthout-bxshdw {
+    box-shadow: unset;
+}
+
+.top-head {
+    display: flex;
+    align-items: center;
+}
+
+.top-head h2 {
+    margin: 0;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.back-icon {
+    margin-right: 10px;
+}
+
+.back-icon svg {
+    vertical-align: middle;
+}
+
+content {
+    display: block;
+    height: 100%;
+    padding: 72px 20px 0;
+}
+
+.phndtl-hdng h1 {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+
+.phndtl-hdng p {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #7C819C;
+    opacity: 0.8;
+}
+
+.input-main {
+    margin-top: 20px;
+}
+
+.input-main .inpt-sngl {
+    width: 100%;
+    position: relative;
+}
+
+.input-main select,
+.input-main input {
+    width: 100%;
+    border: 0;
+    background: #eee;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.input-main select {
+    color: #888;
+    padding: 17px 10px;
+}
+
+.input-main input {
+    /* padding: 24px 10px 6px 13px; */
+    padding: 23px 10px 7px 13px;
+}
+
+.input-main input+span {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #969BB0;
+}
+
+.input-main .inpt-sngl+.inpt-sngl {
+    margin-top: 20px;
+}
+
+.verify-btn {
+    /* position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    bottom: 0; */
+    padding-bottom: 20px;
+}
+
+.vrify-btn {
+    background: linear-gradient(91.75deg, #FF2F2A 0%, #FF9812 100%);
+    box-shadow: 0px 9px 17px rgb(255 175 82 / 30%);
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 9px 12px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.orng_bg-box {
+    background: rgb(255 106 45 / 10%);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    color: #FF6A2D;
+    margin-top: 20px;
+}
+
+.bx_left-sec {
+    display: flex;
+    align-items: center;
+}
+
+.bx_left-details h6 {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.bx_left-details p {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.bx_left-details {
+    padding: 0 12px;
+}
+
+.chng-btn {
+    background: #FF6A2D;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+    color: #fff;
+    border: 1px solid #ff6a2d;
+}
+
+.gtstrtd-rdobtn ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0 -6px;
+}
+
+.gtstrtd-rdobtn ul li {
+    padding: 0 6px;
+}
+
+.vcl-nam label {
+    position: relative;
+}
+
+.vcl-nam label input[type="radio"] {
+    position: absolute;
+    display: none;
+}
+
+.vcl-nam label span {
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+.vcl-nam label span {
+    padding: 6px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    border: 1px solid #E1E1E1;
+    color: #969BB0;
+    margin-bottom: 10px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.vcl-nam label input[type="radio"]:checked+span {
+    border: 1px solid #FF6A2D;
+    color: #2C2940;
+}
+
+.gt-strtd {
+    margin: 20px 0;
+}
+
+.gt-hdng {
+    margin-bottom: 15px;
+}
+
+.gt-hdng h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C2940;
+    margin: 0;
+}

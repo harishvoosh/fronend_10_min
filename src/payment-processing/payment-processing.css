@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.main {
+    height: 100vh;
+}
+
+content {
+    display: block;
+    height: 100%;
+    padding: 0 20px 0;
+}
+
+.pymnt_procsng-main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pymnt_procsng-descrp {
+    text-align: center;
+}
+
+.pymnt_procsng-descrp h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    margin: 5px 0 5px;
+}
+
+.pymnt_procsng-descrp p {
+    margin: 0;
+    color: rgb(44 41 64 / 60%);
+    opacity: 0.8;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.verify-btn {
+    /* position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    bottom: 0; */
+    margin: 12px 0;
+}
+
+.vrify-btn {
+    background: linear-gradient(91.75deg, #FF2F2A 0%, #FF9812 100%);
+    box-shadow: 0px 9px 17px rgb(255 175 82 / 30%);
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 9px 12px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.vrify-btn.gry-bg {
+    background: #F2F3F5;
+    box-shadow: unset;
+    border: 1px solid #F2F3F5;
+    color: #969AB0;
+}
+
+.d-none {
+    display: none;
+}
+
+.process-popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 0 10px;
+}
+
+.payment-failed {
+    background: #fff;
+    padding: 28px 20px 15px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(49, 52, 58, 0.6);
+    z-index: -1;
+    backdrop-filter: blur(4px);
+}
+
+.payment-failed h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000;
+    margin: 0;
+}
+
+.payment-failed p {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: rgb(44 41 64 / 60%);
+}
+
+.pymntmod-main {
+    width: 100%;
+}
+
+.pymntmod-main .pymntmod-btn {
+    background: transparent;
+    color: #FF661E;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 20px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #FFD7C5;
+    border-radius: 4px;
+}
+
+.error-icon {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -28px;
+}

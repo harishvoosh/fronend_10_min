@@ -17,10 +17,12 @@ export default function Header() {
         style={{
           background: '#83ADFF',
           boxShadow: 'inherit',
+          height: '70px',
+          justifyContent: 'center',
         }}
       >
         <Toolbar>
-          <Link to="sidemenu">
+          <Link to="sidemenu" style={{ textDecoration: 'none' }}>
             <IconButton
               size="large"
               edge="start"

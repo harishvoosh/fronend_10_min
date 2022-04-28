@@ -18,7 +18,7 @@ export default function Sidemenu() {
       }}
     >
       <div style={{ backgroundColor: '#FFE5DA' }}>
-        <Link to="profile">
+        <Link to="profile" style={{ textDecoration: 'none' }}>
           <div
             style={{
               display: 'flex',
@@ -109,7 +109,7 @@ export default function Sidemenu() {
             <KeyboardArrowRightIcon />
           </IconButton>
         </div>
-        <Link to="order">
+        <Link to="order" style={{ textDecoration: 'none' }}>
           <div
             style={{
               display: 'flex',
@@ -149,7 +149,7 @@ export default function Sidemenu() {
             </IconButton>
           </div>
         </Link>
-        <Link to="address">
+        <Link to="address" style={{ textDecoration: 'none' }}>
           <div
             style={{
               display: 'flex',
@@ -189,7 +189,7 @@ export default function Sidemenu() {
             </IconButton>
           </div>
         </Link>
-        <Link to="faq">
+        <Link to="faq" style={{ textDecoration: 'none' }}>
           <div
             style={{
               display: 'flex',
@@ -229,7 +229,7 @@ export default function Sidemenu() {
             </IconButton>
           </div>
         </Link>
-        <Link to="feedback">
+        <Link to="feedback" style={{ textDecoration: 'none' }}>
           <div
             style={{
               display: 'flex',
@@ -316,6 +316,7 @@ export default function Sidemenu() {
           height: '85px',
           width: '309px',
           backgroundColor: '#F5F4F9',
+          paddingLeft: '10px',
         }}
       >
         <img src={require('../media/VooshLogo.png')} />

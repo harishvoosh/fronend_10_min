@@ -11,11 +11,11 @@ import './card.css';
 export default function Homecard() {
   return (
     <Card
-      sx={{
+      style={{
         display: 'flex',
         margin: '10px',
         height: '157px',
-        width: '400px',
+
         borderRadius: '8px',
       }}
     >

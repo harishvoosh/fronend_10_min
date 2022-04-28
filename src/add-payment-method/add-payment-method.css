@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.main {
+    height: 100vh;
+}
+
+header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgb(0 0 0 / 15%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header.wthout-bxshdw {
+    box-shadow: unset;
+}
+
+.top-head {
+    display: flex;
+    align-items: center;
+}
+
+.top-head h2 {
+    margin: 0;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.back-icon {
+    margin-right: 10px;
+}
+
+.back-icon svg {
+    vertical-align: middle;
+}
+
+content {
+    display: block;
+    height: 100%;
+    padding: 72px 20px 0;
+}
+
+.pymntmthod-hdng {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.gt-hdng h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2C2940;
+    margin: 0;
+}
+
+.pymntmthod-hdng h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.pymntmthod-hdng {}
+
+.paymntmthd-dtls {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 0 12px 0;
+}
+
+.paymntmthd-innerlst {
+    padding: 0 10px;
+}
+
+.paymntmthd-innerlst h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    color: #2C2940;
+}
+
+.paymntmthd-innerlst p {
+    margin: 0;
+    font-family: Proxima Nova;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7C819C;
+}
+
+.rght-arow {
+    position: absolute;
+    right: 4px;
+    top: 25px;
+}
+
+.paymntmthd-dtls+.paymntmthd-dtls {
+    border-top: 1px solid rgb(0 0 0 / 10%);
+}

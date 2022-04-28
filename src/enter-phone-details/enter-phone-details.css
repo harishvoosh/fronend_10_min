@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.main {
+    height: 100vh;
+}
+
+header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 9px rgb(0 0 0 / 15%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+header.wthout-bxshdw {
+    box-shadow: unset;
+}
+
+.top-head {
+    display: flex;
+    align-items: center;
+}
+
+.top-head h2 {
+    margin: 0;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.back-icon {
+    margin-right: 10px;
+}
+
+.back-icon svg {
+    vertical-align: middle;
+}
+
+content {
+    display: block;
+    height: 100%;
+    padding: 66px 20px 0;
+}
+
+.phndtl-hdng h1 {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.phndtl-hdng {}
+
+.phndtl-hdng p {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #7C819C;
+    opacity: 0.8;
+}
+
+.input-main {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.input-main .selct-drpdwn {
+    width: 20%;
+    padding-right: 5px;
+}
+
+.input-main .inpt-sngl {
+    width: 80%;
+    position: relative;
+}
+
+.input-main select,
+.input-main input {
+    width: 100%;
+    border: 0;
+    background: #eee;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.input-main select {
+    color: #888;
+    padding: 17px 10px;
+}
+
+.input-main input {
+    padding: 24px 10px 11px 13px;
+}
+
+.input-main input+span {
+    position: absolute;
+    top: 8px;
+    left: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.06em;
+    color: #969BB0;
+}
+
+.verify-btn {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    bottom: 0;
+}
+
+.vrify-btn {
+    background: linear-gradient(91.75deg, #FF2F2A 0%, #FF9812 100%);
+    box-shadow: 0px 9px 17px rgb(255 175 82 / 30%);
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 9px 12px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}

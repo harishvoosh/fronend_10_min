@@ -12,7 +12,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 export default function Addresscard() {
   return (
-    <Card sx={{ width: 400, margin: '16px' }}>
+    <Card sx={{ margin: '16px' }}>
       <CardContent>
         <div
           style={{

@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea {
+    outline: none !important;
+}
+
+.main {
+    height: 100vh;
+}
+
+content {
+    display: block;
+    height: 100%;
+    padding: 0 20px 0;
+}
+
+.pymnt_procsng-main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.pymnt_procsng-descrp {
+    text-align: center;
+}
+
+.pymnt_procsng-descrp h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    margin: 5px 0 5px;
+}
+
+.pymnt_procsng-descrp p {
+    margin: 0;
+    color: rgb(44 41 64 / 60%);
+    opacity: 0.8;
+    font-family: Proxima Nova;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.process-popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    padding: 0 10px;
+}
+
+.popup-card {
+    background: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    position: relative;
+}
+
+.card-head {
+    padding: 20px;
+}
+
+.card-head h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2C2940;
+    margin: 0 0 4px;
+}
+
+.card-head p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    color: rgb(124 129 156 / 80%);
+}
+
+.enable-main {
+    margin-top: 12px;
+    margin-bottom: 1px;
+}
+
+.enable-main .enbl-btn {
+    padding: 7px 20px;
+    background: linear-gradient(90.76deg, #1CD14F 0%, #16A43E 99.8%);
+    border-radius: 4px;
+    border: 1px solid #18b243;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.manual-adres {
+    position: relative;
+    padding: 10px 13px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    box-shadow: 0px 9px 17px rgb(216 216 216 / 50%);
+    border-radius: 4px;
+}
+
+.manual-adres p {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #969BB0;
+}
+
+.card-bg {
+    padding: 20px;
+    background: #F0F0F0;
+}
+
+.right-arow {
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(49, 52, 58, 0.6);
+    z-index: -1;
+    backdrop-filter: blur(4px);
+}

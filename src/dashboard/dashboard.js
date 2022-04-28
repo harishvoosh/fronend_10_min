@@ -11,7 +11,7 @@ import Header from '../header/header';
 
 export default function Dashboard() {
   return (
-    <div>
+    <>
       <Header />
       <div
         style={{
@@ -25,14 +25,16 @@ export default function Dashboard() {
           display: 'grid',
         }}
       >
-        <Homecard />
-        <Homecard />
-        <Homecard />
-        <Homecard />
-        <Homecard />
-        <Homecard />
+        <div>
+          <Homecard />
+          <Homecard />
+          <Homecard />
+          <Homecard />
+          <Homecard />
+          <Homecard />
+        </div>
         {/* View full menu */}
-        <Link to="fullmenu">
+        <Link to="fullmenu" style={{ textDecoration: 'none' }}>
           <Card style={{ margin: '16px', height: '60px' }}>
             <Box>
               <CardContent
@@ -59,13 +61,17 @@ export default function Dashboard() {
             </Box>
           </Card>
         </Link>
+        <Link to="cart" style={{ textDecoration: 'none' }}>
+          <div>checkout</div>
+        </Link>
 
         {/* bottom info */}
         <div
           style={{
             height: '85px',
-            width: '430px',
+            maxWidth: '420px',
             backgroundColor: '#F5F4F9',
+            paddingLeft: '16px',
           }}
         >
           <img src={require('../media/VooshLogo.png')} />
@@ -74,6 +80,6 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

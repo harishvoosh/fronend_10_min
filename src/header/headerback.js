@@ -9,12 +9,17 @@ import Box from '@mui/material/Box';
 
 export default function Headerback() {
   return (
-    <Box>
+    <>
       <AppBar
-        position="static"
+        position="sticky"
         // position="fixed"
 
-        style={{ background: '#fff', boxShadow: 'inherit' }}
+        style={{
+          background: '#fff',
+          boxShadow: 'inherit',
+          height: '70px',
+          justifyContent: 'center',
+        }}
       >
         <Toolbar>
           <IconButton
@@ -29,6 +34,6 @@ export default function Headerback() {
           </IconButton>
         </Toolbar>
       </AppBar>
-    </Box>
+    </>
   );
 }
